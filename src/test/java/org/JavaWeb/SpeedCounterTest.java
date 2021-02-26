@@ -5,6 +5,7 @@ import org.junit.Test;
 
 
 public class SpeedCounterTest {
+
     private SpeedCounter speedCounter = new SpeedCounter(20, 43, 19, -3);
 
     @Test
