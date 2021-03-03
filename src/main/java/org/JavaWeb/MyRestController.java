@@ -7,15 +7,14 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("task")
 public class MyRestController {
 
-    private static final Logger log = Logger.getLogger(SpeedCounter.class);
+    private static final Logger log = Logger.getLogger(FibonacciCalculation.class);
 
     @GetMapping
-    public String speedCounting(@RequestParam int m1, @RequestParam int m2, @RequestParam int v1, @RequestParam int v2) throws InputException {
+    public String Calculating(@RequestParam int num) throws InputException {
         log.info("Get Request param from URL");
-        double v3;
-        SpeedCounter obj = new SpeedCounter(m1, m2, v1, v2);
-        v3 = obj.SpeedCounting();
+        FibonacciCalculation obj = new FibonacciCalculation(num);
+        int resultNum = obj.FibonacciCalculating();
         log.info("Return task answer");
-        return String.format("v3 = %f",v3);
+        return String.format("resultNum = %d",resultNum);
     }
 }
