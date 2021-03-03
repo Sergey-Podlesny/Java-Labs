@@ -14,12 +14,12 @@ public class FibonacciCalculation {
 
     public int FibonacciCalculating() throws InputException {
         log.debug("Start of FibonacciCalculating method");
-        if(num < 0)
+        if(num <= 0)
         {
             log.error("num < 0");
             throw new InputException("error");
         }
-        if(num == 0 || num == 1)
+        if(num == 1)
         {
             return 0;
         }
