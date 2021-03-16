@@ -12,9 +12,7 @@ public class Application {
     public static void main(String[] args) {
 
         log.debug("Start of Main");
-
         SpringApplication.run(Application.class, args);
-
         log.debug("End of Main");
     }
 }

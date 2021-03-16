@@ -1,5 +1,4 @@
 package org.JavaWeb;
-
 import org.apache.log4j.Logger;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,11 +9,11 @@ public class MyRestController {
     private static final Logger log = Logger.getLogger(FibonacciCalculation.class);
 
     @GetMapping
-    public String Calculating(@RequestParam int num) throws InputException {
+    public ResultDto Calculating(@RequestParam int num) throws NotFoundException, ServerError {
         log.info("Get Request param from URL");
-        FibonacciCalculation obj = new FibonacciCalculation(num);
-        int resultNum = obj.FibonacciCalculating();
+        int resultNum = FibonacciCalculation.CalculateFibonacci(num);
+        ResultDto obj = new ResultDto(resultNum);
         log.info("Return task answer");
-        return String.format("resultNum = %d",resultNum);
+        return obj;
     }
 }

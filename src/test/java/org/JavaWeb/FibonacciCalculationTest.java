@@ -6,17 +6,15 @@ import org.junit.Test;
 
 public class FibonacciCalculationTest {
 
-    private FibonacciCalculation fibonacciCalculation = new FibonacciCalculation(4);
-
     @Test
-    public void CorrectTest() throws InputException {
-        int resultNum = fibonacciCalculation.FibonacciCalculating();
+    public void CorrectTest() throws NotFoundException, ServerError {
+        int resultNum = FibonacciCalculation.CalculateFibonacci(4);
         Assert.assertEquals(2, resultNum);
     }
 
     @Test
-    public void IncorrectTest() throws InputException {
-        int resultNum = fibonacciCalculation.FibonacciCalculating();
+    public void IncorrectTest() throws NotFoundException, ServerError {
+        int resultNum = FibonacciCalculation.CalculateFibonacci(4);
         Assert.assertNotEquals(1, resultNum);
     }
 }

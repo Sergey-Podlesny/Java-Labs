@@ -1,23 +1,21 @@
 package org.JavaWeb;
-
 import org.apache.log4j.Logger;
 
 public class FibonacciCalculation {
 
     private static final Logger log = Logger.getLogger(FibonacciCalculation.class);
 
-    private int num;
-    public FibonacciCalculation(int num) {
-        this.num = num;
-        log.debug("Init object of FibonacciCalculation class");
-    }
-
-    public int FibonacciCalculating() throws InputException {
+    public static int CalculateFibonacci(int num) throws NotFoundException, ServerError {
         log.debug("Start of FibonacciCalculating method");
         if(num <= 0)
         {
-            log.error("num < 0");
-            throw new InputException("error");
+            log.error("num <= 0");
+            throw new NotFoundException("Num less then 1");
+        }
+        if(num > 200)
+        {
+            log.error("num > 200");
+            throw new ServerError("Num more then 200");
         }
         if(num == 1)
         {
