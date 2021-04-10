@@ -1,4 +1,5 @@
 package org.java.web.entity;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ResultDto {
@@ -6,8 +7,7 @@ public class ResultDto {
     @JsonProperty("num")
     int resultNum;
 
-    public ResultDto(int num)
-    {
+    public ResultDto(int num) {
         resultNum = num;
     }
 }
