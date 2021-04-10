@@ -1,22 +1,14 @@
-package org.JavaWeb;
+package org.java.web.logic.calculator;
 import org.apache.log4j.Logger;
+import org.java.web.exception.BadRequestException;
+import org.java.web.exception.ServerErrorException;
 
 public class FibonacciCalculation {
 
     private static final Logger log = Logger.getLogger(FibonacciCalculation.class);
 
-    public static int CalculateFibonacci(int num) throws NotFoundException, ServerError {
+    public int CalculateFibonacci(int num) throws BadRequestException, ServerErrorException {
         log.debug("Start of FibonacciCalculating method");
-        if(num <= 0)
-        {
-            log.error("num <= 0");
-            throw new NotFoundException("Num less then 1");
-        }
-        if(num > 200)
-        {
-            log.error("num > 200");
-            throw new ServerError("Num more then 200");
-        }
         if(num == 1)
         {
             return 0;

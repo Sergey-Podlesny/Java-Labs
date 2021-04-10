@@ -1,4 +1,4 @@
-package org.JavaWeb;
+package org.java.web.entity;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ResultDto {
