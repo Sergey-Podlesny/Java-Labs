@@ -1,4 +1,5 @@
 package org.java.web;
+
 import org.apache.log4j.Logger;
 import org.java.web.logic.calculator.FibonacciCalculation;
 import org.springframework.boot.SpringApplication;

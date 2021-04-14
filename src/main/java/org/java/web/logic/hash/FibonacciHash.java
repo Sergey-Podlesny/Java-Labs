@@ -1,6 +1,6 @@
 package org.java.web.logic.hash;
 
-import org.java.web.entity.ResultDto;
+import org.java.web.entity.NumDto;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
@@ -9,17 +9,17 @@ import java.util.Map;
 @Component
 public class FibonacciHash {
 
-    private final Map<Integer, ResultDto> map = new HashMap<>();
+    private final Map<Integer, NumDto> map = new HashMap<>();
 
     public boolean isAlreadyHashed(Integer num) {
         return map.containsKey(num);
     }
 
-    public void addToMao(Integer num, ResultDto dto) {
+    public void addToMao(Integer num, NumDto dto) {
         map.put(num, dto);
     }
 
-    public ResultDto getParameters(Integer num) {
+    public NumDto getParameters(Integer num) {
         return map.get(num);
     }
 }

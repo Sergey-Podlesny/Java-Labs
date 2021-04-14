@@ -1,11 +1,9 @@
 package org.java.web.controllers;
 import org.apache.log4j.Logger;
-import org.java.web.logic.calculator.FibonacciCalculation;
 import org.java.web.exception.BadRequestException;
 import org.java.web.entity.ResultDto;
 import org.java.web.exception.ServerErrorException;
-import org.java.web.logic.services.FibonacciService;
-import org.java.web.logic.services.Service;
+import org.java.web.logic.service.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,10 +17,11 @@ public class MyRestController {
     private Service<ResultDto, Integer> service;
 
     @GetMapping
-    public ResultDto Calculating(@RequestParam int num) throws BadRequestException, ServerErrorException {
+    public ResultDto calculating(@RequestParam int num) throws BadRequestException, ServerErrorException {
         log.info("Get Request param from URL");
-        ResultDto dto = service.doService(num);
+        ResultDto resultDto = service.doService(num);
+
         log.info("Return task answer");
-        return dto;
+        return resultDto;
     }
 }

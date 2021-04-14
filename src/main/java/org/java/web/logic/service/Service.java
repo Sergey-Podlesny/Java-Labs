@@ -1,4 +1,4 @@
-package org.java.web.logic.services;
+package org.java.web.logic.service;
 
 import org.java.web.exception.BadRequestException;
 import org.java.web.exception.ServerErrorException;
