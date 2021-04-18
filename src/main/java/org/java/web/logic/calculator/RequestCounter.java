@@ -3,11 +3,19 @@ package org.java.web.logic.calculator;
 import org.springframework.stereotype.Component;
 
 @Component
-public class RequestCounter {
-    public Integer count(Counter<Integer> entity) {
-        synchronized (this) {
-            entity.increment();
-            return entity.getCount();
+public class RequestCounter implements Counter<Integer> {
+
+    private Integer counter = 0;
+
+    @Override
+    public void increment() {
+        synchronized (counter) {
+            counter++;
         }
+    }
+
+    @Override
+    public Integer getCount() {
+        return counter;
     }
 }

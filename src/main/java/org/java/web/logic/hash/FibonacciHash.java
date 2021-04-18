@@ -15,7 +15,7 @@ public class FibonacciHash {
         return map.containsKey(num);
     }
 
-    public void addToMao(Integer num, NumDto dto) {
+    public void addToMap(Integer num, NumDto dto) {
         map.put(num, dto);
     }
 
