@@ -1,8 +1,6 @@
 package org.java.web.entity;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
-import org.springframework.stereotype.Component;
 
 import java.util.Objects;
 

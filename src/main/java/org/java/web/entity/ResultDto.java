@@ -42,4 +42,14 @@ public class ResultDto {
     public void setRequestNum(int requestNum) {
         this.requestNum = requestNum;
     }
+
+    @Override
+    public String toString() {
+        return "result Num = " + resultNum +
+                "request Num = " + requestNum +
+                " min Result Num = " + minResultNum +
+                " max Result Num = " + maxResultNum +
+                " aver Result Num = " + averResultNum + "\n";
+    }
+
 }

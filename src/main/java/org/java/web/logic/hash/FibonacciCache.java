@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Component
-public class FibonacciHash {
+public class FibonacciCache {
 
     private final Map<Integer, NumDto> map = new HashMap<>();
 

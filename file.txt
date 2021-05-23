@@ -1,0 +1,7 @@
+result Num = 0request Num = 1 min Result Num = 0 max Result Num = 0 aver Result Num = OptionalDouble[0.0]
+result Num = 3request Num = 2 min Result Num = 0 max Result Num = 3 aver Result Num = OptionalDouble[1.5]
+result Num = 1request Num = 3 min Result Num = 0 max Result Num = 3 aver Result Num = OptionalDouble[1.3333333333333333]
+result Num = 5request Num = 4 min Result Num = 0 max Result Num = 5 aver Result Num = OptionalDouble[2.25]
+result Num = 3request Num = 5 min Result Num = 0 max Result Num = 5 aver Result Num = OptionalDouble[2.4]
+result Num = 2request Num = 6 min Result Num = 0 max Result Num = 5 aver Result Num = OptionalDouble[2.3333333333333335]
+result Num = 89request Num = 7 min Result Num = 0 max Result Num = 89 aver Result Num = OptionalDouble[14.714285714285714]
