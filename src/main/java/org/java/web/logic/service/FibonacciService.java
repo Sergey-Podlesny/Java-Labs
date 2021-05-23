@@ -10,7 +10,7 @@ import org.java.web.logic.calculator.Counter;
 import org.java.web.logic.calculator.FibonacciCalculation;
 import org.java.web.logic.calculator.RequestCounter;
 import org.java.web.logic.calculator.ResultsHandler;
-import org.java.web.logic.hash.FibonacciCache;
+import org.java.web.logic.cache.FibonacciCache;
 import org.java.web.logic.validator.InputValidator;
 import org.java.web.logic.validator.ServerValidator;
 import org.springframework.beans.factory.annotation.Autowired;

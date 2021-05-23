@@ -1,4 +1,4 @@
-package org.java.web.logic.hash;
+package org.java.web.logic.cache;
 
 import org.java.web.entity.NumDto;
 import org.springframework.stereotype.Component;
